@@ -1,0 +1,393 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: var(--yellow-color);
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Start Navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 23px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+
+/*start logo */
+#M {
+  color: var(--green-color);
+}
+span {
+  color: var(--red-color);
+}
+/* end logo */
+
+/* background the page */
+.content {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../photo/salon.jpg);
+  background-size: cover;
+  background-position: 70%;
+}
+/* background the page */
+
+/* title the contanet page */
+h3.text-center  {
+  padding-bottom: 15px;
+  margin-top: 15px;
+  background-color: var(--yellow-color);
+  border-radius: 25px;
+  font-size: 30px;
+  word-spacing: 15px;
+  letter-spacing: 5px;
+  text-transform:capitalize;
+} 
+/* End Navbar */
+
+/* card1 */
+#btn2 button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--dark-color);
+  color: white;
+  border-radius: 20px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+.container  .card{
+ border-radius: 20px;
+ 
+
+}
+
+/* card1 */
+
+
+/* card2 */
+#hove{
+  box-shadow: 0 0 15px black;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+}
+
+#tpc {
+  box-shadow: 0 0 15px black;
+  transition: 0.15s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+#tpc:hover {
+  transform: translateY(-15px);
+}
+#c{
+  box-shadow: 0 0 15px black;
+  transition: 0.5s ease;
+  cursor: pointer;
+  
+} 
+.container3 img {
+  height: 500px;
+}
+.container4 img{
+  height: 500px;
+}
+.container3 .card-text {
+  margin-top: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#btn2 {
+
+  text-align: center;
+  margin-bottom: 10px;
+}
+#btn2 :hover {
+  transition:10ms;
+  scale: 1.09;
+  color: white;
+  background-color: var(--dark-color);
+}
+/* card2 */
+
+/* start card3 */
+#c p {
+  font-weight: bold;
+}
+#btn3 {
+  text-align: center;
+  
+}
+
+#btn3 button {
+  width: 150px;
+  height: 50px;
+  background-color: var(--dark-color);
+  color: white;
+  border: 2px solid black;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+#btn3 button:hover {
+  transition:10ms;
+  scale: 1.09;
+  color: white;
+  background-color: var(--dark-color);
+}
+@media screen and (max-width: 895px) {
+  #btn3 button {
+    width: 100px;
+  }
+}
+/* end card3 */
+
+
+
+
+#btn4 button {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: var(--dark-color);
+  color: white;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#btn4 button:hover {
+letter-spacing:2px ;
+ 
+}
+/* start reviews */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background:var(--green-color);
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color:var(--green-color);
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+/* end reviews */
+
+
+
+
+
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+/* End Subscribe */
+
+
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* End Footer */
+
+
+
+/*  start content */
+.content2 h1{
+  font-size: 100px;
+  position: absolute;
+  top: 250px;
+  left:80px ;
+  color:rgb(255, 255, 255);
+  letter-spacing: 5px;
+  
+}
+.content2 h1 span{
+  position: absolute;
+  left: 150px; 
+  color: var(--section-color);
+}
+
+.content2 p {
+  position: absolute;
+  top: 500px;
+  left:80px ;
+  font-size: 22px;
+  color: var(--section-color);
+  
+
+}
+
+#btn1 button{
+  width: 250px;
+  height: 62px;
+  background-color:var(--dark-color);
+  color: var(--green-color);
+  border: 5px solid var(--section-color);
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 690px;
+  left:80px ;
+  border-radius: 20px;
+}
+#btn1 button:hover{
+  transition: all;
+  scale: 1.05;
+}
+@media screen and (max-width:620px){
+  .content2 h1{
+      font-size: 30px;
+  }
+
+} 
+/* end content */
+/* reviews */
+.star{
+  text-align: center;
+  color: var(--yellow-color);
+}

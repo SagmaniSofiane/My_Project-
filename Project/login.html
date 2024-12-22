@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h2 id="M">MOR<span>OCCO</span></h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="index.html"><h4>Home</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="./index.html"><h4>Prodact</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="./index.html"><h4>About</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="./concat.html"><h4>Contact</h4></a>
+            </li>
+          </ul>
+          <div class="search ps-3 pe-3 d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <a class="btn rounded-pill main-btn" href="login.html"><h4>Login</h4></a>
+        </div>
+      </div>
+    </nav> 
+    <!-- start form -->
+    <div class="login_form "  id="login_form">
+      <!-- Login form container -->
+      <form action="#">
+        <h3>Log in with</h3>
+  
+        <div class="login_option">
+          <!-- Google button -->
+          <div class="option">
+            <a href="#">
+              <img src="logos/google.png" alt="Google" />
+              <span>Google</span>
+            </a>
+          </div>
+  
+          <!-- Apple button -->
+          <div class="option">
+            <a href="#">
+              <img src="logos/apple.png" alt="Apple" />
+              <span>Apple</span>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Login option separator -->
+        <p class="separator">
+          <span>or</span>
+        </p>
+  
+        <!-- Email input box -->
+        <div class="input_box">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email address" required autofocus />
+        </div>
+  
+        <!-- Paswwrod input box -->
+        <div class="input_box">
+          <div class="password_title">
+            <label for="password">Password</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+  
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+  
+         <!-- Login button -->
+        <button type="submit">Log In</button>
+  
+        <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+  </body>
+</html>
